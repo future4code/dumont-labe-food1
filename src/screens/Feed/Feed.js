@@ -7,14 +7,11 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-
-
 
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -39,6 +36,8 @@ import saude1  from '../../assets/saudavel1.jpg'
 import saude2 from '../../assets/saudavel2.jpg'
 import saude3  from'../../assets/saudavel3.jpeg'
 
+import { useHistory } from 'react-router-dom';
+  
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -82,7 +81,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ScrollableTabsButtonAuto() {
+export default function Feed() {
+  const history = useHistory()
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 

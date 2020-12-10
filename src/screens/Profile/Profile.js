@@ -1,8 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Profile = () => {
+  const history = useHistory()
+
   return(
-    <div>Profile Page</div>
+    <div>Profile</div>
   )
 }
 

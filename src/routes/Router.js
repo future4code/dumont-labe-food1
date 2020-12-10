@@ -6,20 +6,26 @@ import Login from "../screens/Login/Login";
 import Profile from "../screens/Profile/Profile";
 import Restaurant from "../screens/Restaurant/Restaurant";
 import SignUp from "../screens/SignUp/SignUp";
+import Feed from "../screens/Feed/Feed"
+import EditRegistration from "../screens/EditRegistration/EditRegistration";
+import AdressRegister from "../screens/AddressRegister/AdressRegister";
 
 
 const Router = () => {
   return(
     <BrowserRouter>
       <Switch>
-        <Route exact path={'/home'}>
-          <HomeScreen/>
-        </Route>
         <Route exact path={'/login'}>
-          <Login/>
+          <HomeScreen/>
         </Route>
         <Route exact path={'/signup'}>
           <SignUp/>
+        </Route>
+        <Route exact path={'/register'}>
+          <AdressRegister/>
+        </Route>
+        <Route exact path={'/home'}>
+          <Feed/>
         </Route>
         <Route exact path={'/restaurant/:id'}>
           <Restaurant/>
