@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import HomeScreen from './screens/HomeScreen/HomeScreen'
+import Feed from './screens/Feed/Feed'
 
 function App() {
   return (
     <div className="App">
-      ghg
+    <Feed/>
     </div>
   );
 }
