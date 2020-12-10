@@ -1,13 +1,23 @@
 import React from "react";
+import Router from './routes/Router';
+
 import "./App.css";
+import styled from 'styled-components'
 
-import Router from "./routes/Router";
+import HomeScreen from './screens/HomeScreen/HomeScreen'
+import Login from './screens/Login/Login'
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <Router />
-    </div>
+
+  
+      
+          <Router />
+      
+     
+   
   );
 }
 

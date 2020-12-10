@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css'
 
+import { useHistory } from 'react-router-dom';
+ 
 
 const AdressRegister= () => {
+  const history = useHistory()
+
   return <div>
 
-
+Adress Register
   </div>
 }
 

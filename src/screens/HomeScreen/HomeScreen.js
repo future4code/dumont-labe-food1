@@ -3,6 +3,7 @@ import styled, { ThemeProvider} from 'styled-components';
 import { Container } from './styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { palette, spacing, typography } from '@material-ui/system';
+import { useHistory } from 'react-router-dom';
 
 
 const Box = styled.div`${palette}${spacing}${typography}`;
@@ -11,12 +12,13 @@ const Box = styled.div`${palette}${spacing}${typography}`;
 const theme = createMuiTheme();
 
 const HomeScreen= () => {
+  const history = useHistory()
 return (
 <Container>
 <ThemeProvider theme={theme}>
 <Box
 color="white"
-// bgcolor="background.paper"
+
 fontFamily="h6.fontFamily"
 fontSize={{ xs: 'h6.fontSize', sm: 'h4.fontSize', md: 'h3.fontSize' }}
 p={{ xs: 0, sm: 0, md: 0 }}
