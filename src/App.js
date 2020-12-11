@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LoginLogo from './screens/Login/LoginLogo';
+import Login from './screens/Login/Login';
 
 function App() {
   return (
-    <div className="App">
-      ghg
+    <div>
+      <Login />
     </div>
   );
 }
