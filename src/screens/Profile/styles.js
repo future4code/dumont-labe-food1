@@ -81,13 +81,20 @@ export const Cpf = styled.p`
 export const EditIcon = styled.img`
     width: 24px;
     height: 24px;
-    margin: 16px 16px 2px 320px;;
+    margin: 2px 2px 2px 320px;;
     object-fit: contain;
+`
+
+export const ProfileInfoContainer = styled.div`
+    width: 360px;
+    height: 106px;
+    margin: 16px 0;
+    padding: 16px;
 `
 
 export const AddressContainer = styled.div`
     width: 360px;
-    height: 76px;
+    height: 96px;
     margin: 16px 0;
     padding: 16px;
     background-color: #eeeeee;
