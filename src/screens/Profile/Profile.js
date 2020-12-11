@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { ProfileContainer, Bar, Tittle, Text, Name, Email, Cpf, EditIcon, AddressContainer, AddressTittle, Address, OrderHistoryTittle, OrderCard, PathCopy, ProfileInfoContainer } from './styles'
 import edit from '../../assets/edit (1).svg'
