@@ -2,22 +2,21 @@ import React from "react";
 import Router from './routes/Router';
 
 import "./App.css";
-import styled from 'styled-components'
 
-import HomeScreen from './screens/HomeScreen/HomeScreen'
-import Login from './screens/Login/Login'
-
+import HomeScreen from "./screens/HomeScreen/HomeScreen"
+// import Feed from './screens/Feed/Feed'
+import Router from "./routes/Router";
 
 
 const App = () => {
   return (
 
-  
-      
-          <Router />
-      
-     
-   
+    <div className="App">
+      <HomeScreen/>
+      <Router/>
+    
+    </div>
+
   );
 }
 
